@@ -62,10 +62,3 @@ void inisialisasiHash() {
 #include "hash.h"
 #include "sort.h"
 #include "search.h"
-
-// Fungsi untuk menampilkan produk
-void tampilkanProduk() {
-    for (const auto &produk : daftarProduk) {
-        cout << produk.id << ". " << produk.nama << " - " << produk.kategori << " - Rp " << fixed << setprecision(2) << produk.harga << endl;
-    }
-}
