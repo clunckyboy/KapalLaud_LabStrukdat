@@ -36,7 +36,6 @@ int main(){
          case 1 : 
             system("cls");
             sortirProduk();
-            cin.ignore();
             getch();
             break;
 
@@ -49,7 +48,6 @@ int main(){
             cout << "Masukkan ID produk yang ingin ditambahkan : ";
             cin >> tambahId;
             tambahKeranjang(tambahId);
-            cin.ignore();
             getch();
             break;
 
@@ -59,14 +57,12 @@ int main(){
             cout << "Masukkan ID : ";
             cin >> idKey;
             cariProduk(idKey);
-            cin.ignore();
             getch();
             break;
 
          case 4 :
             system("cls");
             isiKeranjang();
-            cin.ignore();
             getch();
             break;
 
@@ -76,7 +72,6 @@ int main(){
             cout << "Masukkan ID produk yang ingin dihapus : ";
             cin >> idHapus;
             hapusProduk(idHapus);
-            cin.ignore();
             getch();
             break;
 
@@ -93,21 +88,18 @@ int main(){
             }
 
             hitungbiayaPengiriman(titik);
-            cin.ignore();
             getch();
             break;
 
          case 7 : 
             system("cls");
             pembayaran();
-            cin.ignore();
             getch();
             break;
 
          case 8 : 
             system("cls");
             lihatriwayatPembayaran();
-            cin.ignore();
             getch();
             break;
 
@@ -120,7 +112,6 @@ int main(){
             cout << "Masukkan ID Transaksi yang ingin dilihat : ";
             cin >> idTransaksi;
             lihatdetailTransaksi(idTransaksi);
-            cin.ignore();
             getch();
             break;
          default : 
