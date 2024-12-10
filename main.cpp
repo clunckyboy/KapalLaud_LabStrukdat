@@ -45,7 +45,7 @@ int main(){
             for (const auto& produk : daftarProduk) {
                cout << produk.id << " - " << produk.nama << " - " << produk.kategori << " - " << fixed << setprecision(0) << produk.harga << endl;
             }
-            cout << "Masukkan ID produk yang ingin ditambahkan : ";
+            cout << "\nMasukkan ID produk yang ingin ditambahkan : ";
             cin >> tambahId;
             tambahKeranjang(tambahId);
             getch();
@@ -69,6 +69,11 @@ int main(){
          case 5 : 
             system("cls");
             int idHapus;
+
+            for (const auto& produk : keranjang) {
+               cout << produk.id << " - " << produk.nama << " - " << produk.kategori << " - " << fixed << setprecision(0) << produk.harga << endl << endl;
+            }
+
             cout << "Masukkan ID produk yang ingin dihapus : ";
             cin >> idHapus;
             hapusProduk(idHapus);
